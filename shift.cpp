@@ -73,9 +73,9 @@ void circular_shift_by_reverse(int * array, const int length, int amount){
     return;
   int * end = array + length - 1;
   int * mid = array + amount - 1;
-  reverse(array, end); // n
-  reverse(array, mid); // amount
-  reverse(mid + 1, end); // n-amount
+  reverse(array, end); // n/2
+  reverse(array, mid); // amount/2
+  reverse(mid + 1, end); // (n-amount)/2
 }
 
 /**
