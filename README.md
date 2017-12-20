@@ -1,5 +1,5 @@
 # Better In-Place Shifting
 
-Most people know the circular shift algorithm that uses reverse internally, which reverses the entire array (n/2 swaps) and then reverses two sub arrays ((n-m)/2 + m/2 == n/2 swaps), using n swaps in total. I was examining this algorithm and was determined to make a different algorithm that would function in place, while still only requiring a maximum of n swaps.
+In-place shifting has had the double-reversal method, and GCD method of shifting which both run in O(n). I made something in-between which also runs in O(n). It is based on element swapping. With each swap, at least one element ends up in the correct position.
 
-Thus, I came up with a new algorithm which uses a maximum of n-1 swaps and a minimum of n/2 swaps (provided of course that the array needs to be shifted at all). 
+It is useful for me because it provides instructions as to where to swap elements, and all one has to do is then write element swapping code. This is particularly useful for when elements are of arbitrary size as they are in one of my other projects.
